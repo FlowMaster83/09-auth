@@ -1,5 +1,3 @@
-// components\Modal\Modal.tsx
-
 'use client';
 
 import { createPortal } from 'react-dom';

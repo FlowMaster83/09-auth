@@ -1,5 +1,3 @@
-// app\notes\filter\@sidebar\default.tsx
-
 import Link from 'next/link';
 import css from './SidebarNotes.module.css';
 import { NoteTag } from '@/types/note';

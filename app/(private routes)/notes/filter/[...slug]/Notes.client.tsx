@@ -6,7 +6,7 @@ import { useDebounce } from 'use-debounce';
 
 import Link from 'next/link';
 
-import { fetchNotes } from '@/lib/api';
+import { fetchNotes } from '@/lib/api/clientApi';
 import type { NoteTag } from '@/types/note';
 
 import SearchBox from '@/components/SearchBox/SearchBox';
