@@ -29,8 +29,8 @@ export async function proxy(request: NextRequest) {
             path: parsed.Path,
             maxAge: Number(parsed['Max-Age']),
           };
-          if (parsed.accessToken) cookieStore.set('accessToken', parsed.accessToken, options);
-          if (parsed.refreshToken) cookieStore.set('refreshToken', parsed.refreshToken, options);
+          if (parsed.accessToken) cookieStore.set('accessToken', parsed.accessToken);
+          if (parsed.refreshToken) cookieStore.set('refreshToken', parsed.refreshToken);
         }
         if (isPublicRoute) {
           return NextResponse.redirect(new URL('/', request.url), {
